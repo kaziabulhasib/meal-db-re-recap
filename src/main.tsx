@@ -7,10 +7,12 @@ import Root from "./components/Root.tsx";
 import Home from "./components/Home.tsx";
 import About from "./components/About.tsx";
 import Contact from "./components/Contact.tsx";
+import Error from "./components/Error.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
